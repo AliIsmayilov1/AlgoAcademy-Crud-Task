@@ -1,0 +1,59 @@
+body{
+    background-color: lightgreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div#Values{
+    display: grid;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 80% 10%;
+    grid-template-areas: 
+    "N T"
+    "C T"
+    "P T"
+    ;
+}
+div#Values>input{
+    height: 20px;
+}
+div#Values>p{
+    grid-area: T;
+    text-align: center;
+    margin: 0;
+    height: 60px;
+    background-color: aqua;
+    border-radius: 8px;
+    line-height: 60px;
+    padding:0px 8px;
+    box-sizing: border-box;
+}
+div#Values>p:hover{
+    cursor: pointer;
+    user-select: none;
+}
+
+div#Values>input#name{
+    grid-area: N;
+}
+div#Values>input#count{
+    grid-area: C;
+}
+div#Values>input#price{
+    grid-area: P;
+}
+div#Objs{
+    margin-top: 16px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0px 8px; 
+    font-size: 18px;
+}
+div#Objs>div#ObjCount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
